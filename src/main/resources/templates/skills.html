@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+  <title>Skills — Uditansh Gupta</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+  <canvas id="sakuraCanvas"></canvas>
+
+  <nav class="navbar">
+    <a th:href="@{/}">Home</a>
+    <a th:href="@{/about}">About</a>
+    <a th:href="@{/experience}">Experience</a>
+    <a th:href="@{/skills}">Skills</a>
+    <a th:href="@{/projects}">Projects</a>
+    <a th:href="@{/contact}">Contact</a>
+  </nav>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="avatar-wrap"><img th:src="@{/images/avatar.jpg}" alt="avatar"></div>
+      <div>
+        <h1 class="site-title">Skills</h1>
+        <p class="site-sub">Tools & strengths</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Technical</h2>
+      <ul>
+        <li>Python, NumPy, pandas, scikit-learn</li>
+        <li>Fundamentals of ML and prototyping</li>
+        <li>Git, Linux, problem solving</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Analytical thinking</li>
+        <li>Communication & mentorship</li>
+        <li>Quick learning & disciplined practice</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Uditansh Gupta. All rights reserved.</footer>
+
+  <script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>
